@@ -1,36 +1,19 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <link rel="stylesheet" href="/index.css">
-
-    <div class="intro">
-        <div class="container">
-            <img src="https://media-exp1.licdn.com/dms/image/D5603AQGkJmpzqP8K7Q/profile-displayphoto-shrink_400_400/0/1665318867157?e=1673481600&v=beta&t=liBXZ5uj1CYOIarzgHuN8DsJ84186YbZiCnriVFDcTU" />
-            <div class="about">
-                <div class="title">
-                    Hello, I'm Sabu Siyad!
-                </div>
-                I love to code, experiment, and listen.
-            </div>
+<div class="h-screen w-screen flex flex-row">
+    <div class="h-screen w-1/2">
+        <img src="/wall.jpg" class="object-cover h-screen w-full"/>
+    </div>
+    <div class="h-screen w-1/2 flex items-center">
+        <div class="mx-8">
+            <h1 class="font-serif text-2xl">
+                Hello, I am Sabu Siyad!
+            </h1>
+            <p class="font-sans text-gray-600">
+                I love to code, build and break
+            </p>
         </div>
-
-        <a href="#social">
-            <i class="las la-chevron-circle-down down-arrow"></i>
-        </a>
     </div>
-
-    <div id="social" class="social-section">
-        <a class="social-icon" href="mailto:hello@ssiyad.com">
-            <i class="las la-at"></i>
-        </a>
-        <a class="social-icon" href="https://ssiyad.t.me">
-            <i class="lab la-telegram"></i>
-        </a>
-        <a class="social-icon" href="https://github.com/ssiyad">
-            <i class="lab la-github"></i>
-        </a>
-        <a class="social-icon" href="https://www.linkedin.com/in/ssiyad/">
-            <i class="lab la-linkedin-in"></i>
-        </a>
-    </div>
+</div>
 {% endblock content %}

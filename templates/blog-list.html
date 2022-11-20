@@ -3,21 +3,23 @@
 {% block content %}
     <link rel="stylesheet" href="/blog-list.css">
 
-    <h1 class="title">
-        {{ section.title }}
-    </h1>
+    <div class="container">
+        <div class="title">
+            {{ section.title }}
+        </div>
 
-    <ul class="post-list">
-        {% for page in section.pages %}
-            <li class="post-item">
-                <a class="post-link" href="{{ page.permalink | safe }}">
-                    {{ page.title }}
-                    <div class="arrow-right">
-                        <i class="las la-arrow-right"></i>
-                    </div>
-                </a>
-            </li>
-        {% endfor %}
-    </ul>
+        <ul class="post-list">
+            {% for page in section.pages %}
+                <li class="post-item">
+                    <a class="post-link" href="{{ page.permalink | safe }}">
+                        {{ page.title }}
+                        <div class="arrow-right">
+                            <i class="las la-arrow-right"></i>
+                        </div>
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
 {% endblock content %}
 
