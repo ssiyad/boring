@@ -8,9 +8,12 @@
         {% block head_extend %}{% endblock %}
     </head>
 
-    <body class="bg-white dark:bg-slate-900">
-        <section>
-            {% block content %}{% endblock %}
-        </section>
+    <body>
+        <div class="bg-white dark:bg-slate-900 transition ease-in-out">
+            <section>
+                {% block content %}{% endblock %}
+            </section>
+        </div>
+        <script src="/script.js"></script>
     </body>
 </html>
