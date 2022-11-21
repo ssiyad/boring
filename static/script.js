@@ -1,5 +1,5 @@
 function toggleDarkMode() {
-    document.body.classList.toggle('dark');
+    document.getElementsByTagName('html')[0].classList.toggle('dark');
 }
 
 function toggleBackToTop() {
