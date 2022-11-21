@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% import "macros.html" as macros %}
+
+{% block content %}
+    <div class="container mx-auto w-1/2">
+        {{ macros::head(title=section.title) }}
+
+        <ul>
+            {% for page in section.pages %}
+                <li class="text-slate-900 hover:text-slate-600 dark:text-slate-400 hover:dark:text-slate-300 transition">
+                    <a class="flex my-4" href="{{ page.permalink | safe }}">
+                        {{ page.title }}
+                        <div class="ml-2">
+                            <i class="las la-arrow-right"></i>
+                        </div>
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock content %}
+
