@@ -4,7 +4,7 @@
 
 {% block content %}
     {{ macros::head(title="/blog/") }}
-    <div class="container mx-auto w-1/2">
+    <div class="container mx-auto w-1/2 mb-16">
         <h1 class="w-2/3 my-8 font-serif text-4xl text-slate-900 dark:text-slate-300">
             {{ page.title }}
         </h1>
@@ -13,6 +13,5 @@
             {{ page.content | safe }}
         </div>
     </div>
-    {{ macros::footer() }}
 {% endblock content %}
 
