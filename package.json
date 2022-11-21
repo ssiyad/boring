@@ -1,6 +1,10 @@
 {
   "dependencies": {
     "@tailwindcss/typography": "^0.5.8",
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.19",
+    "postcss-cli": "^10.0.0",
+    "postcss-import": "^15.0.0",
     "tailwindcss": "^3.2.4"
   },
   "name": "ssiyad.com",
@@ -9,7 +13,7 @@
   "author": "Sabu Siyad <hello@ssiyad.com>",
   "license": "MIT",
   "scripts": {
-    "build": "npx tailwindcss -i styles/styles.css -o public/styles/styles.css --minify",
-    "watch": "npx tailwindcss -i styles/styles.css -o public/styles/styles.css; zola serve"
+    "build": "npx postcss styles/styles.css -o static/styles/styles.css --minify",
+    "watch": "npx postcss styles/styles.css -o static/styles/styles.css --watch"
   }
 }
