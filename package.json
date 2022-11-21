@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "@tailwindcss/typography": "^0.5.8",
+    "tailwindcss": "^3.2.4"
+  },
+  "name": "ssiyad.com",
+  "version": "0.1",
+  "repository": "git@github.com:ssiyad/ssiyad.github.io.git",
+  "author": "Sabu Siyad <hello@ssiyad.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "npx tailwindcss -i styles/styles.css -o public/styles/styles.css --minify",
+    "watch": "npx tailwindcss -i styles/styles.css -o public/styles/styles.css; zola serve"
+  }
+}
