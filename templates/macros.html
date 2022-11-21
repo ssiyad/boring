@@ -1,14 +1,16 @@
 {% macro head(title) %}
-    <div class="flex place-content-between py-8 font-serif text-2xl
-        text-slate-900 dark:text-slate-300">
-        <div>
-            {{ title }}
-        </div>
-        <div>
-            <i class="las la-level-up-alt"></i>
-            <a href="/"><i class="las la-home"></i></a>
-            <i class="hidden dark:inline las la-sun"></i>
-            <i class="inline dark:hidden las la-moon"></i>
+    <div class=" sticky top-0 bg-slate-100 dark:bg-slate-800">
+        <div class="container mx-auto w-1/2 flex place-content-between py-8
+            font-serif text-2xl text-slate-900 dark:text-slate-300">
+            <div>
+                {{ title }}
+            </div>
+            <div>
+                <i class="las la-level-up-alt"></i>
+                <a href="/"><i class="las la-home"></i></a>
+                <i class="hidden dark:inline las la-sun"></i>
+                <i class="inline dark:hidden las la-moon"></i>
+            </div>
         </div>
     </div>
 {% endmacro head %}

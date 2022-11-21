@@ -3,8 +3,8 @@
 {% import "macros.html" as macros %}
 
 {% block content %}
+    {{ macros::head(title=section.title) }}
     <div class="container mx-auto w-1/2">
-        {{ macros::head(title=section.title) }}
 
         <ul>
             {% for page in section.pages %}
