@@ -1,9 +1,24 @@
-{% macro head(title) %}
+{% macro header(components, is_page) %}
     <div class="sticky top-0 bg-slate-100 dark:bg-slate-800">
         <div class="container mx-auto w-1/2 flex place-content-between py-8
             font-serif text-2xl text-slate-900 dark:text-slate-300">
-            <div>
-                {{ title }}
+            <div class="flex">
+                {% set_global rel_url = "/" %}
+                {% for component in components %}
+                    {% set_global rel_url = rel_url ~ component ~ '/' %}
+                    {% if not loop.last %}
+                        <a class="m-0 p-0 text-slate-900 hover:text-slate-700
+                            dark:text-slate-300 dark:hover:text-slate-200"
+                            href="{{ rel_url }}">
+                            /{{ component }}
+                        </a>
+                    {% elif is_page %}
+                    {% else %}
+                        <div class="m-0 p-0 text-slate-700 dark:text-slate-200">
+                            /{{ component }}
+                        </div>
+                    {% endif %}
+                {% endfor %}
             </div>
             <div class="flex gap-2">
                 <div id="back-to-top" class="hidden cursor-pointer">

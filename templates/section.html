@@ -7,7 +7,7 @@
 {% endblock head_extend %}
 
 {% block content %}
-    {{ macros::head(title=section.title) }}
+    {{ macros::header(components=section.components, is_page=false) }}
     <div class="container mx-auto w-1/2 mb-16">
         <ul>
             {% for page in section.pages %}
