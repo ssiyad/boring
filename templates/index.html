@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 
+{% block head_extend %}
+    <title>Home | {{ config.title }}</title>
+{% endblock head_extend %}
+
 {% block content %}
 <div class="h-screen w-screen flex flex-row">
     <div class="h-screen w-1/2">
