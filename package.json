@@ -2,6 +2,7 @@
   "dependencies": {
     "@tailwindcss/typography": "^0.5.8",
     "autoprefixer": "^10.4.13",
+    "cssnano": "^5.1.14",
     "postcss": "^8.4.19",
     "postcss-cli": "^10.0.0",
     "postcss-import": "^15.0.0",
@@ -13,7 +14,7 @@
   "author": "Sabu Siyad <hello@ssiyad.com>",
   "license": "MIT",
   "scripts": {
-    "build": "npx postcss css/style.css -o static/css/style.css --minify",
+    "build": "npx postcss css/style.css -o static/css/style.css",
     "watch": "npx postcss css/style.css -o static/css/style.css --watch"
   }
 }
