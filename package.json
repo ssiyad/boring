@@ -13,7 +13,7 @@
   "author": "Sabu Siyad <hello@ssiyad.com>",
   "license": "MIT",
   "scripts": {
-    "build": "npx postcss styles/styles.css -o static/styles/styles.css --minify",
-    "watch": "npx postcss styles/styles.css -o static/styles/styles.css --watch"
+    "build": "npx postcss css/style.css -o static/css/style.css --minify",
+    "watch": "npx postcss css/style.css -o static/css/style.css --watch"
   }
 }
