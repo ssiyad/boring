@@ -1,11 +1,21 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <link rel="stylesheet" href="/index.css">
-
-    <div class="full-screen">
-        <div class="title">
+    <div class="h-screen w-screen flex flex-col items-center justify-center">
+        <div class="font-serif text-8xl text-slate-800 dark:text-slate-400">
             404
+        </div>
+        <div class="flex items-center gap-1 text-4xl text-slate-500">
+            <div class="p-2 hover:bg-slate-800 transition">
+                <a href="javascript:history.back()">
+                    <i class="las la-arrow-left"></i>
+                </a>
+            </div>
+            <div class="p-2 hover:bg-slate-800 transition">
+                <a href="/">
+                    <i class="las la-home"></i>
+                </a>
+            </div>
         </div>
     </div>
 {% endblock content %}
