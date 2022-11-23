@@ -1,0 +1,37 @@
+@layer base {
+    @font-face {
+        font-family: 'Work Sans';
+        font-style: normal;
+        src: url('/fonts/WorkSans-VariableFont_wght.ttf');
+    }
+
+    @font-face {
+        font-family: 'Work Sans';
+        font-style: italic;
+        src: url('/fonts/WorkSans-Italic-VariableFont_wght.ttf');
+    }
+
+    @font-face {
+        font-family: 'Crimson Pro';
+        font-style: normal;
+        src: url('/fonts/CrimsonPro-VariableFont_wght.ttf');
+    }
+
+    @font-face {
+        font-family: 'Crimson Pro';
+        font-style: italic;
+        src: url('/fonts/CrimsonPro-Italic-VariableFont_wght.ttf');
+    }
+
+    @font-face {
+        font-family: 'JetBrains Mono';
+        font-style: normal;
+        src: url('/fonts/JetBrainsMono-Italic-VariableFont_wght.ttf');
+    }
+
+    @font-face {
+        font-family: 'JetBrains Mono';
+        font-style: italic;
+        src: url('/fonts/JetBrainsMono-Italic-VariableFont_wght.ttf');
+    }
+}
