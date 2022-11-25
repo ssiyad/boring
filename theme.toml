@@ -1,0 +1,20 @@
+name = "boring"
+description = "A minimal theme"
+license = "GPLv3"
+homepage = "https://github.com/ssiyad/boring"
+# The minimum version of Zola required
+min_version = "0.16.0"
+
+# Any variable there can be overridden in the end user `config.toml`
+# You don't need to prefix variables by the theme name but as this will
+# be merged with user data, some kind of prefix or nesting is preferable
+# Use snake_casing to be consistent with the rest of Zola
+[extra]
+homepage_title = ""
+homepage_subtitle = ""
+homepage_img_url = ""
+
+# The theme author info: you!
+[author]
+name = "Sabu Siyad"
+homepage = "https://ssiyad.com"
