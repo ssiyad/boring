@@ -6,24 +6,30 @@
 
 {% block content %}
 <div class="h-screen w-screen flex flex-row">
-    <div class="h-screen w-1/2">
-        <img src="/wall.jpg" class="object-cover h-screen w-full"/>
-    </div>
+    {% if config.extra.homepage_img_url %}
+        <div class="h-screen w-1/2">
+            <img
+                src="{{ config.extra.homepage_img_url }}"
+                class="object-cover h-screen w-full"/>
+        </div>
+    {% endif %}
     <div class="h-screen w-1/2 flex items-center">
         <div class="mx-8">
             <h1 class="font-serif text-4xl text-black dark:text-slate-300">
-                Hello, I am Sabu Siyad!
+                {{ config.extra.homepage_title }}
             </h1>
             <p class="font-sans text-xl text-gray-600 dark:text-slate-500">
-                I love to code, build and break
+                {{ config.extra.homepage_subtitle }}
             </p>
-            <div class="mt-4">
-                <a class="font-sans text-gray-600 hover:text-gray-400
-                    dark:text-slate-500 dark:hover:text-slate-400 transition"
-                    href="/blog">
-                    Visit my blog <i class="las la-arrow-right"></i>
-                </a>
-            </div>
+            {% block homepage_content_extend %}
+                <div class="mt-4">
+                    <a class="font-sans text-gray-600 hover:text-gray-400
+                        dark:text-slate-500 dark:hover:text-slate-400 transition"
+                        href="/blog">
+                        Visit my blog <i class="las la-arrow-right"></i>
+                    </a>
+                </div>
+            {% endblock homepage_content_extend %}
         </div>
     </div>
 </div>
