@@ -1,0 +1,39 @@
+# The URL the site will be built for
+base_url = "/"
+
+# The site title and description; used in feeds by default.
+title = "boring"
+description = "A boring theme for Zola"
+
+# When set to "true", the generated HTML files are minified.
+minify_html = true
+
+# When set to "true", a feed is automatically generated.
+generate_feed = true
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = false
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+[markdown]
+# Whether to do syntax highlighting Theme can be customised by setting the
+# `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+
+# The theme to use for code highlighting.
+highlight_theme = "nord"
+
+# When set to "true", emoji aliases translated to their corresponding
+# Unicode emoji equivalent in the rendered Markdown files. (e.g.: :smile: => 😄)
+render_emoji = true
+
+# Whether smart punctuation is enabled (changing quotes, dashes, dots in their typographic form)
+# For example, `...` into `…`, `"quote"` into `“curly”` etc
+smart_punctuation = true
+
+[extra]
+homepage_title = "Hello, I am a boring guy!"
+homepage_subtitle = "I love to sit around all day, doing nothing."
+homepage_img_url = "/homepage-img.jpg"
