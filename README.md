@@ -5,10 +5,7 @@ Minimal theme for [Zola](https://www.getzola.org/), powered by
 ### Demo
 https://boring-zola.netlify.app/
 
-### Screenshots
-![sreenshot1](./screenshots/1.png)
-![sreenshot2](./screenshots/2.png)
-![sreenshot3](./screenshots/3.png)
+![sreenshot](./screenshot.png)
 
 ### Setup
 In your zola site directory
