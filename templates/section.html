@@ -8,10 +8,10 @@
 
 {% block content %}
     {{ macros::header(components=section.components, is_page=false) }}
-    <div class="container mx-auto w-1/2 mt-16 mb-16">
+    <div class="container mx-auto w-auto xl:w-1/2 mt-16 mb-16">
         {% if section.pages %}
             <div class="my-8">
-                <div class="text-2xl bg-amber-100 text-slate-800
+                <div class="text-6xl xl:text-2xl bg-amber-100 text-slate-800
                     dark:bg-indigo-900 dark:text-slate-300 p-2 w-max">
                     Posts
                 </div>
@@ -20,9 +20,9 @@
                         <li class="text-slate-900 hover:text-slate-600
                             dark:text-slate-400 hover:dark:text-slate-300
                             transition">
-                            <a class="flex my-4" href="{{ page.permalink | safe }}">
+                            <a class="flex my-12 xl:my-4 text-4xl xl:text-base" href="{{ page.permalink | safe }}">
                                 {{ page.title }}
-                                <div class="ml-2">
+                                <div class="ml-2 hidden xl:inline">
                                     <i class="las la-arrow-right"></i>
                                 </div>
                             </a>
@@ -33,7 +33,7 @@
         {% endif %}
         {% if section.subsections %}
             <div class="my-8">
-                <div class="text-2xl bg-amber-100 dark:bg-indigo-900
+                <div class="text-6xl xl:text-2xl bg-amber-100 dark:bg-indigo-900
                     text-slate-800 dark:text-slate-300 p-2 w-max">
                     Categories 
                 </div>
@@ -42,9 +42,9 @@
                         {% set sect = get_section(path=sub, metadata_only=true) %}
                         <li class="text-slate-900 hover:text-slate-600
                             dark:text-slate-400 hover:dark:text-slate-300 transition">
-                            <a class="flex my-4" href="{{ sect.permalink }}">
+                            <a class="flex my-12 xl:my-4 text-4xl xl:text-base" href="{{ sect.permalink }}">
                                 {{ sect.title }}
-                                <div class="ml-2">
+                                <div class="ml-2 hidden xl:inline">
                                     <i class="las la-arrow-right"></i>
                                 </div>
                             </a>
