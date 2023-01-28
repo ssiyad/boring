@@ -30,6 +30,20 @@
                         Visit my blog <i class="las la-arrow-right"></i>
                     </a>
                 </div>
+                {% block social %}
+                    {% if config.extra.social %}            
+                        <div class="mt-4 text-8xl xl:text-4xl flex gap-2 justify-center
+                                    xl:justify-start">
+                            {% for i in config.extra.social %}
+                                <div class="text-gray-500 hover:text-gray-700 transition">
+                                <a href="{{ i.url }}" target="_blank">
+                                    <i class="{{ i.icon }}"></i>
+                                </a>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                {% endblock social %}
             {% endblock homepage_content_extend %}
         </div>
     </div>
