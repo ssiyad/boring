@@ -38,6 +38,8 @@ homepage_title = "Hello, I am a boring guy!"
 homepage_subtitle = "I love to sit around all day, doing nothing."
 homepage_img_url = "/homepage-img.jpg"
 
+# Refer https://icons8.com/line-awesome for list of icons
+# Both `url` and `icon` should be set for each entry
 [[extra.social]]
 url = "https://github.com/ssiyad/boring"
 icon = "lab la-github"
