@@ -38,6 +38,9 @@ homepage_title = "Hello, I am a boring guy!"
 homepage_subtitle = "I love to sit around all day, doing nothing."
 homepage_img_url = "/homepage-img.jpg"
 
+# Refer https://support.google.com/analytics/answer/9539598?hl=en
+google_analytics_measurement_id = ""
+
 # Refer https://icons8.com/line-awesome for list of icons
 # Both `url` and `icon` should be set for each entry
 [[extra.social]]

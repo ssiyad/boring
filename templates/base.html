@@ -2,7 +2,20 @@
 <html lang="en" class="scroll-smooth">
     <head>
         <meta charset="utf-8">
-        <!-- TODO: use `get_url` -->
+
+        {% set gtag_id = config.extra.google_analytics_measurement_id %}
+        {% if gtag_id %}
+            <!-- Google tag (gtag.js) -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id={{ gtag_id }}"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag("js", new Date());
+
+                gtag("config", "{{ gtag_id }}");
+            </script>
+        {% endif %}
+
         <link rel="stylesheet" href="/css/style.css"/>
         <link rel="stylesheet" href="/line-awesome/css/line-awesome.min.css"/>
         <script src="/js/main.js" defer></script>
