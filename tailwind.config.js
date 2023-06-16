@@ -9,7 +9,16 @@ module.exports = {
       serif: ['"Crimson Pro"', ...defaultTheme.fontFamily.serif],
       sans: ['"Work Sans"', ...defaultTheme.fontFamily.sans],
       mono: ['"JetBrains Mono"', ...defaultTheme.fontFamily.mono],
-    }
+    },
+    extend: {
+      typography: (theme) => ({
+        gray: {
+          css: {
+            '--tw-prose-body': theme('colors.gray.900'),
+          },
+        },
+      }),
+    },
   },
   variants: {},
   plugins: [
