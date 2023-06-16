@@ -8,7 +8,7 @@
 
 {% block content %}
     {{ macros::header(components=page.components, is_page=true) }}
-    <div class="container mx-auto w-full xl:w-1/2 mb-16">
+    <div class="container mb-16">
         <div class="mt-4 font-serif text-slate-600 dark:text-slate-500 text-4xl xl:text-base">
             {{ page.date | date(format="%Y-%m-%d") }}
         </div>
@@ -22,4 +22,3 @@
         </div>
     </div>
 {% endblock content %}
-

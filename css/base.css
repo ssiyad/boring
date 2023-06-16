@@ -6,10 +6,12 @@
 	.prose-boring {
 		@apply
 		prose
+		prose-slate
 		prose-2xl
-		text-4xl
+		lg:prose-base
+		text-5xl
 		leading-relaxed
-		xl:prose-base
+		max-w-none
 		prose-pre:rounded-none
 		prose-headings:bg-amber-100
 		prose-headings:text-slate-800 
