@@ -5,23 +5,23 @@
 {% endblock head_extend %}
 
 {% block content %}
-<div class="h-screen xl:h-auto xl:w-screen flex flex-col xl:flex-row space-y-16 
-            items-center xl:items-start xl:text-left">
+<div class="h-screen lg:h-auto lg:w-screen flex flex-col lg:flex-row space-y-16 
+            items-center lg:items-start lg:text-left">
     {% if config.extra.homepage_img_url %}
         <img
             src="{{ config.extra.homepage_img_url }}"
-            class="object-cover h-1/2 xl:h-screen xl:w-1/2"/>
+            class="object-cover h-1/2 lg:h-screen lg:w-1/2"/>
     {% endif %}
-    <div class="xl:h-screen xl:w-1/2 flex items-center">
+    <div class="lg:h-screen lg:w-1/2 flex items-center">
         <div class="mx-16 flex flex-col space-y-16">
-            <h1 class="font-serif text-8xl xl:text-4xl text-slate-900 dark:text-slate-300">
+            <h1 class="font-serif text-8xl lg:text-4xl text-slate-900 dark:text-slate-300">
                 {{ config.extra.homepage_title }}
             </h1>
-            <p class="font-sans text-5xl xl:text-xl text-slate-600 dark:text-slate-500">
+            <p class="font-sans text-5xl lg:text-xl text-slate-600 dark:text-slate-500">
                 {{ config.extra.homepage_subtitle }}
             </p>
             {% block homepage_content_extend %}
-                <div class="mt-4 text-5xl xl:text-xl">
+                <div class="mt-4 text-5xl lg:text-xl">
                     <a class="font-sans text-gray-500 hover:text-gray-400
                         dark:text-slate-500 dark:hover:text-slate-400 transition"
                         href="/blog">
@@ -30,7 +30,7 @@
                 </div>
                 {% block social %}
                     {% if config.extra.social %}            
-                        <div class="mt-4 text-8xl xl:text-4xl flex gap-2">
+                        <div class="mt-4 text-8xl lg:text-4xl flex gap-2">
                             {% for i in config.extra.social %}
                                 <div class="text-slate-500 hover:text-slate-700 transition">
                                 <a href="{{ i.url }}" target="_blank">
