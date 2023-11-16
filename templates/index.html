@@ -6,11 +6,11 @@
 
 {% block content %}
 <div class="h-screen lg:h-auto lg:w-screen flex flex-col lg:flex-row space-y-16 
-            items-center lg:items-start lg:text-left">
+            lg:space-y-0 items-center lg:items-start lg:text-left">
     {% if config.extra.homepage_img_url %}
         <img
             src="{{ config.extra.homepage_img_url }}"
-            class="object-cover h-1/2 lg:h-screen lg:w-1/2"/>
+            class="object-cover h-1/2 w-full lg:h-screen lg:w-1/2"/>
     {% endif %}
     <div class="lg:h-screen lg:w-1/2 flex items-center">
         <div class="mx-16 flex flex-col space-y-16 lg:space-y-4">
