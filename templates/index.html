@@ -5,26 +5,24 @@
 {% endblock head_extend %}
 
 {% block content %}
-<div class="h-screen xl:h-auto xl:w-screen flex flex-col xl:flex-row gap-8 xl:gap-0
-            items-center xl:items-start text-center xl:text-left justify-center
-            xl:justify-start">
+<div class="h-screen xl:h-auto xl:w-screen flex flex-col xl:flex-row space-y-16 
+            items-center xl:items-start xl:text-left">
     {% if config.extra.homepage_img_url %}
         <img
             src="{{ config.extra.homepage_img_url }}"
-            class="object-cover h-64 w-64 xl:h-screen xl:w-1/2 rounded-full
-            xl:rounded-none"/>
+            class="object-cover h-1/2 xl:h-screen xl:w-1/2"/>
     {% endif %}
     <div class="xl:h-screen xl:w-1/2 flex items-center">
-        <div class="mx-8 flex flex-col gap-12 xl:gap-0">
-            <h1 class="font-serif text-8xl xl:text-4xl text-black dark:text-slate-300">
+        <div class="mx-16 flex flex-col space-y-16">
+            <h1 class="font-serif text-8xl xl:text-4xl text-slate-900 dark:text-slate-300">
                 {{ config.extra.homepage_title }}
             </h1>
-            <p class="font-sans text-4xl xl:text-xl text-gray-600 dark:text-slate-500">
+            <p class="font-sans text-5xl xl:text-xl text-slate-600 dark:text-slate-500">
                 {{ config.extra.homepage_subtitle }}
             </p>
             {% block homepage_content_extend %}
-                <div class="mt-4 text-4xl xl:text-xl">
-                    <a class="font-sans text-gray-600 hover:text-gray-400
+                <div class="mt-4 text-5xl xl:text-xl">
+                    <a class="font-sans text-gray-500 hover:text-gray-400
                         dark:text-slate-500 dark:hover:text-slate-400 transition"
                         href="/blog">
                         Visit my blog <i class="las la-arrow-right"></i>
@@ -32,10 +30,9 @@
                 </div>
                 {% block social %}
                     {% if config.extra.social %}            
-                        <div class="mt-4 text-8xl xl:text-4xl flex gap-2 justify-center
-                                    xl:justify-start">
+                        <div class="mt-4 text-8xl xl:text-4xl flex gap-2">
                             {% for i in config.extra.social %}
-                                <div class="text-gray-500 hover:text-gray-700 transition">
+                                <div class="text-slate-500 hover:text-slate-700 transition">
                                 <a href="{{ i.url }}" target="_blank">
                                     <i class="{{ i.icon }}"></i>
                                 </a>
