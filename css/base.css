@@ -3,24 +3,54 @@
 @tailwind utilities;
 
 @layer utilities {
-	.prose-boring {
-		@apply
-		prose
-		prose-slate
-		prose-2xl
-		lg:prose-base
-		text-4xl
-		leading-relaxed
-		max-w-none
-		prose-pre:rounded-none
-		prose-headings:bg-amber-100
-		prose-headings:text-slate-800 
-		prose-headings:font-normal
-		prose-headings:p-2
-		prose-headings:w-max
-		prose-headings:font-serif
-		dark:prose-invert
-		dark:prose-headings:bg-indigo-900
-		dark:prose-headings:text-slate-300
-	}
+  .prose-boring {
+    @apply
+    prose
+    prose-slate
+    prose-2xl
+    lg:prose-base
+    text-4xl
+    leading-relaxed
+    max-w-none
+    prose-pre:rounded-none
+    prose-headings:bg-amber-100
+    prose-headings:text-slate-800
+    prose-headings:font-normal
+    prose-headings:p-2
+    prose-headings:w-max
+    prose-headings:font-serif
+    dark:prose-invert
+    dark:prose-headings:bg-indigo-900
+    dark:prose-headings:text-slate-300
+    dark:prose-pre:border
+    dark:prose-pre:border-gray-700
+  }
+}
+
+
+.code-block-wrapper {
+  position: relative;
+}
+
+.copy-button {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: rgba(50, 50, 60, 0.8);
+  color: #e2e8f0;
+  border: 1px solid #4b5563;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-family: 'Work Sans', sans-serif;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.copy-button:hover {
+  background-color: rgba(75, 85, 99, 0.8);
+}
+
+.copy-button:active {
+  transform: scale(0.97);
 }
