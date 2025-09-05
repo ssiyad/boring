@@ -11,13 +11,13 @@ https://boring-zola.netlify.app/
 In your zola site directory
 - Get theme
 
-    ```shell
+    ```bash
     git submodule add https://github.com/ssiyad/boring themes/boring
     ```
 
 - Build CSS
 
-    ```shell
+    ```bash
     cd themes/boring
     yarn install --frozen-lockfile
     yarn build
